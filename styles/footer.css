@@ -1,0 +1,296 @@
+.footer{
+    padding-top: 75px;
+}
+
+.footer_container{
+    width: 100%;
+    margin: 0 auto;
+background-image: url(../img/footer_background.png);
+background-repeat: no-repeat;
+background-size: cover;
+padding-top: 60px;
+padding-bottom: 37px
+
+}
+
+.footer_top{
+    display: flex;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.footer_content{
+
+}
+
+.footer_content-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer_backgroung{
+    z-index: 0;
+}
+
+.footer__email{
+    border-bottom: 1px solid #535353;
+    width: 262px;
+}
+
+.footer__input{
+    margin-bottom: 16px;
+}
+
+.footer_left{
+    margin-right: 36px;
+    margin-top: 51px;
+}
+
+.footer_left-btn{
+    border: 1px solid #FF703E;
+    background: #FF703E;
+    border-radius: 5px;
+    width: 314px;
+    height: 46px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 19px;
+    margin-top: 50px;
+}
+
+.footer_number{
+    margin-bottom: 15px;
+}
+
+.footer_number-link{
+    font-weight: 600;
+font-size: 16px;
+color: #535353;
+}
+
+.footer_number-link:hover{
+    color: #FF703E;
+}
+
+.footer_email-link{
+    font-weight: 600;
+    font-size: 16px;
+    color: #535353;
+}
+
+.footer_left-bottom{
+    margin-top: 46px;
+}
+
+.footer_left-bootom-link{
+    display: flex;
+    align-items: center;
+    margin-top: 37px;
+}
+
+.left-bootom-link{
+    height: 50px;
+    width: 50px;
+
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    border-radius: 50%;
+    line-height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-bootom-link:hover{
+    background-color: #ff713ea9;
+    transition: 0.4s;
+}
+
+#icon_messenger-vk{
+    margin-top: 5px;
+}
+
+.icon_messenger:hover{
+filter: invert(1);
+}
+
+.left-bootom-link + .left-bootom-link{
+    margin-left: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_content-column--1{
+    width: 149px;
+    height: 133px;
+    margin-right: 55px;
+}
+
+.footer_content-column--2{
+    width: 174px;
+    height: 209px;
+    margin-right: 55px;
+}
+
+.footer_content-column--3{
+    width: 74px;
+    height: 133px;
+    margin-right: 55px;
+}
+
+.footer_content-column--4{
+    width: 250px;
+    height: 312px;
+}
+
+.footer_title{
+    font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+color: #FF703E;
+margin-bottom: 19px;
+}
+
+
+.footer__link{
+    font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+color: #535353;
+margin-bottom: 19px;
+}
+
+.footer__link:hover{
+    color: #FF703E;
+}
+
+.footer__link-last:hover{
+    color: #FF703E;
+}
+
+.footer__link-last{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #535353;
+    margin-top: 38px; 
+    margin-bottom: 19px;
+}
+
+.bottom-content-left{
+    color: #535353;
+    font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+margin-bottom: 15px;
+}
+
+.bottom-content-right{
+    color: #535353;
+    font-weight: 700;
+font-size: 14px;
+line-height: 16px; 
+}
+
+.content-bottom-left{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #A5A5A5;
+}
+
+.content-bottom-left:hover{
+    color: #535353;
+}
+
+.content-bottom-right{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #A5A5A5;
+}
+
+.content-bottom--bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 51px;
+}
+
+.footer_info-img{
+    width: 250px;
+    height: 340px;
+}
+
+.footer_checkbox {
+    display: block;
+    position: relative;
+    width: 314px;
+    margin-top: 36px;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #535353;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .footer_checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border: 1px solid #535353;
+  }
+  
+  /* При наведении курсора мыши добавьте серый цвет фона */
+  .footer_checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* Если флажок установлен, добавьте синий фон */
+  .footer_checkbox input:checked ~ .checkmark {
+    /* background-color: #2196F3; */
+  }
+  
+  /* Создайте флажок/индикатор (скрытый, если он не установлен) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Показывать галочку при установке флажка */
+  .footer_checkbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Стиль галочки/индикатора */
+  .footer_checkbox .checkmark:after {
+    left: 4px;
+    top: 5px;
+    width: 16px;
+    height: 14px;
+    border: 2px solid #27C78D;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }

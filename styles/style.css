@@ -1,0 +1,59 @@
+html{
+    overflow-x: hidden;
+}
+
+.wrapper{
+    padding-left: 15px;
+}
+
+.logo-svg{
+    border-right: 1px solid rgb(97, 97, 97);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo-p{
+    display: flex;
+    color: #535353;
+}
+
+.up_icon{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 35px;
+    height: 35px;
+    rotate: 180deg;
+
+}
+
+.up_scroll{
+    /* border: 1px solid #FF703E;
+    border-radius: 50%; */
+    position: fixed;
+    bottom: 31px;
+    right: 33px;
+    width: 50px;
+    height: 50px;
+    /* background-color: #ff713e5b; */
+    cursor: pointer;
+    transition: opacity .3s ease-in-out;
+    opacity: 0;
+    z-index: 2;
+}
+
+.up_scroll:hover{
+/*  */
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+

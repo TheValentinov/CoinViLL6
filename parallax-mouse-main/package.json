@@ -1,0 +1,35 @@
+{
+  "name": "parallax-mouse",
+  "version": "1.0.1",
+  "description": "Simple parallax elements for the mouse.",
+  "main": "src/parallax-mouse.js",
+  "source": true,
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "dev": "parcel ./src/*.html -p 3000 --open --no-cache",
+    "prod": "parcel build ./src/parallax-mouse.js --out-file parallax-mouse.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rah-emil/parallax-mouse.git"
+  },
+  "keywords": [
+    "parallax",
+    "gyroscope",
+    "js",
+    "plugin",
+    "javascript",
+    "library"
+  ],
+  "author": "Rah Emil <013131@mail.ru>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rah-emil/parallax-mouse/issues"
+  },
+  "homepage": "https://github.com/rah-emil/parallax-mouse#readme",
+  "devDependencies": {
+    "@babel/core": "^7.13.16",
+    "parcel-bundler": "^1.12.5",
+    "rimraf": "^3.0.2"
+  }
+}
