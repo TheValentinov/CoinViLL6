@@ -1,5 +1,5 @@
 .footer{
-    padding-top: 75px;
+
 }
 
 .footer_container{
@@ -20,7 +20,8 @@ padding-bottom: 37px
 }
 
 .footer_content{
-
+    display: flex;
+    align-items: flex-end;
 }
 
 .footer_content-wrapper{

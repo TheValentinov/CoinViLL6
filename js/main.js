@@ -1,15 +1,15 @@
-const menu = document.querySelector(".menu");
-const menuBtn = document.querySelector(".menu_icon-btn");
-const cancelBtn = document.querySelector(".close_icon-btn");
+// const menu = document.querySelector(".menu");
+// const menuBtn = document.querySelector(".menu_icon-btn");
+// const cancelBtn = document.querySelector(".close_icon-btn");
 
-menuBtn.addEventListener('click', function (e) {
-  menu.classList.toggle("active");
-  menuBtn.classList.toggle("hide")
-})
-cancelBtn.addEventListener('click', function (e) {
-  menu.classList.remove("active");
-  menuBtn.classList.remove("hide");
-})
+// menuBtn.addEventListener('click', function (e) {
+//   menu.classList.toggle("active");
+//   menuBtn.classList.toggle("hide")
+// })
+// cancelBtn.addEventListener('click', function (e) {
+//   menu.classList.remove("active");
+//   menuBtn.classList.remove("hide");
+// })
 
 /*--------------------SCROLL UP----------------------------*/
 
@@ -74,7 +74,9 @@ one.forEach(function (item) {
 })
 
 /*---------------PARALLAX-----------------------*/
-// parallaxMouse({ elements: '.right-content-laptop', moveFactor: 10, wrap: '.wrapper', perspective: '100px' })
+parallaxMouse({ elements: '.line_step-img1', moveFactor: 5, wrap: '.container-relative1', perspective: '100px' })
+parallaxMouse({ elements: '.line_step-img2', moveFactor: 5, wrap: '.container-relative2', perspective: '100px' })
+parallaxMouse({ elements: '.line_step-img3', moveFactor: 2, wrap: '.container-relative3', perspective: '100px' })
 
 
 
@@ -181,3 +183,22 @@ window.onscroll = function(){
     scroll1 = scroll2;
 }
 
+/*--------------NAV MENU HOVER----------------*/
+
+$(document).ready(function() {
+  // cool nav menu
+  $(window).on('load resize', function() {
+    var $thisnav = $('.current-menu-item').offset().left;
+
+    $('.menu-item').hover(function() {
+      var $left = $(this).offset().left - $thisnav;
+      var $width = $(this).outerWidth();
+      var $start = 0;
+      $('.wee').css({ 'left': $left , 'width': $width });
+    }, function() {
+      var $initwidth = $('.current-menu-item').width();
+      $('.wee').css({ 'left': '0' , 'width': $initwidth });
+    });
+  });
+
+});

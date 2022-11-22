@@ -356,6 +356,18 @@ display: none;
     margin-left: 20px;
 }
 
+.footer_content{
+    justify-content: center;
+}
+
+.screenshot-holder .video-holder{
+    overflow-y: visible;
+}
+
+.container_content--9{
+    margin-top: 300px;
+}
+
 .footer_content-wrapper{
     justify-items: center;
 }
@@ -562,9 +574,7 @@ transition: 0.3s ease;
         padding-right: 15px;  
     }
 
-    .footer_content{
-        padding-left: 15px;
-    }
+
 
     .column_four{
         width: 110%;
@@ -622,7 +632,13 @@ transition: 0.3s ease;
         width: 280px;
     }
 
+    .column_four-gradient-right{
+        width: 80px;
+    }
 
+    .column_four-gradient-left{
+        width: 80px;
+    }
 
     .two-column-ability{
         left: 0px;

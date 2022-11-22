@@ -1,0 +1,3 @@
+User-agent: *
+Allow: 
+Sitemap: http://evo-kass.ru/sitemap.xml

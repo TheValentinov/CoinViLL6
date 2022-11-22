@@ -5,6 +5,10 @@
     padding: 0 15px;
 }
 
+.logo-img{
+    min-width: 205px;
+}
+
 .header_top{
     height: 80px;
     position: fixed;
@@ -30,8 +34,7 @@
 
 .entry_lk{
     display: flex;
-    align-items: center;
-    margin-top: 15px;
+
 }
 
 .entry_lk-mini{
@@ -92,8 +95,14 @@
 
 .entry_lk-left{
     display: flex;
-    align-items: center;
-    margin-right: 18px;
+    align-items: flex-start;
+    margin-right: 35px;
+}
+
+.key_img{
+    position: relative;
+    top: -5px;
+    left: 0;
 }
 
 .entry_lk-left--mini{
@@ -111,6 +120,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .menu_top{
