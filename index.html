@@ -113,40 +113,34 @@
                             </a>
                         </div>
                         <div itemscope itemtype="https://schema.org/BreadcrumbList" class="menu_right">
-                            <nav class="menu">
-                                <div itemprop class="menu-item current-menu-item" itemscope>
-                                    <a itemprop href="integrations.html" class="menu_link">
-                                        Главная
-                                    </a>
-                                    <div class="wee"></div>
-                                  </div>
-                                <div itemprop class="menu-item" itemscope>
-                                    <a itemprop href="descraption.html" class="menu_link2">
+                            <nav class="menu" style="--items: 4;">
+                                <div itemprop class="menu-item" itemscope id="menu_line">
+                                    <a itemprop href="descraption.html" class="menu_line menu_link">
                                         О сервисе
                                     </a>
-                                    
                                   </div>
-                                  <div class="menu-item">
-                                    <a itemprop href="integrations.html" class="menu_link">
+                                  <div class="menu-item" id="menu_line">
+                                    <a itemprop href="integrations.html" class="menu_line menu_link">
                                         Интеграции
                                     </a>
                                   </div>
-                                  <div class="entry_lk">
-                                  <div class="menu-item">
+ 
+                                  <div class="menu-item" id="menu_line">
                                     <div class="entry_lk-left">
                                     <img class="key_img" src="img/key_lk.svg" alt="">
-                                    <button class="login_lk">
+                                    <button class="menu_line login_lk">
                                         Войти
                                     </button>
                                     </div>
                                   </div>
                                   
-                                  <div class="menu-item">
-                                    <button class="registry_lk">
+                                  <div class="menu-item" id="menu_line">
+                                    <button class="menu_line registry_lk">
                                         Регистрация
                                     </button>
                                   </div>
-                                  </div>
+
+
                                 <!-- <div class="menu_top"></div>
                                 <ul itemscope itemtype="https://schema.org/BreadcrumbList" class="menu_list">
                                     <li itemprop class="menu_list-item" itemscope>
@@ -158,7 +152,8 @@
 
                                     </li>
                                 </ul> -->
-
+                                <span class="wee2"></span>
+                                <span class="wee"></span>
                                 <div class="close_icon-btn">
                                     <img class="close_icon" src="img/icon-close-btn.svg" alt="">
                                 </div>
@@ -473,8 +468,8 @@
                                             <div style="height:auto"><img src="img/import_tran-1.png"
                                                     preload="auto" loop="" style="height: auto;"
                                                     autoplay=""></img></div>
-                                                    <div class="line_step3">
-                                                        <img src="img/lines_right-step.png" alt="" class="line_step-img1">
+                                                    <div data-relative-input="true" id="line_step" class="line_step3">
+                                                        <img data-depth="0.06" src="img/lines_right-step.png" alt="" class="line_step-img1" id="scene">
                                                     </div>
                                         </div>
                                     </div>
@@ -601,8 +596,8 @@
                                             <div style="height:auto"><img src="img/import_tran-3.png"
                                                     preload="auto" loop="" style="width:87%;height: auto;"
                                                     autoplay=""></img></div>
-                                                    <div class="line_step">
-                                                        <img src="img/line_right-step-2.png" alt="" class="line_step-img2">
+                                                    <div data-relative-input="true" id="line_step3" class="line_step">
+                                                        <img data-depth="0.1" src="img/line_right-step-2.png" alt="" class="line_step-img2" id="scene">
                                                     </div>
                                         </div>
                                     </div>
@@ -729,8 +724,8 @@
                                             <div style="height:auto"><img src="img/import_tran-5.png"
                                                     preload="auto" loop="" style="height: auto;"
                                                     autoplay=""></img></div>
-                                                    <div class="line_step2">
-                                                        <img src="img/line_right-step-3.png" alt="" class="line_step-img3">
+                                                    <div data-relative-input="true" id="line_step2" class="line_step2">
+                                                        <img data-depth="0.08" src="img/line_right-step-3.png" alt="" class="line_step-img3">
                                                     </div>
                                         </div>
                                     </div>
@@ -1905,7 +1900,8 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.formstyler.min.js"></script>
     <script src="WOW-master/dist/wow.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/parallax-mouse@1.0.1/dist/parallax-mouse.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/parallax-mouse@1.0.1/dist/parallax-mouse.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>

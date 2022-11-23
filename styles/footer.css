@@ -8,7 +8,6 @@
 background-image: url(../img/footer_background.png);
 background-repeat: no-repeat;
 background-size: cover;
-padding-top: 60px;
 padding-bottom: 37px
 
 }
@@ -92,20 +91,14 @@ color: #535353;
 .left-bootom-link{
     height: 50px;
     width: 50px;
-
-    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
     text-align: center;
-    border-radius: 50%;
     line-height: 65px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.left-bootom-link:hover{
-    background-color: #ff713ea9;
-    transition: 0.4s;
-}
+
 
 #icon_messenger-vk{
     margin-top: 5px;
@@ -210,6 +203,7 @@ line-height: 16px;
     font-size: 16px;
     line-height: 19px;
     color: #A5A5A5;
+    margin-left: 200px;
 }
 
 .content-bottom--bottom{
@@ -235,10 +229,8 @@ line-height: 16px;
     font-weight: 400;
     line-height: 19px;
     color: #535353;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    font-family: 'Roboto', sans-serif;
+
   }
   
   /* Hide the browser's default checkbox */
@@ -255,9 +247,8 @@ line-height: 16px;
     position: absolute;
     top: 0;
     left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
+    height: 24px;
+    width: 24px;
     border: 1px solid #535353;
   }
   
@@ -285,13 +276,12 @@ line-height: 16px;
   
   /* Стиль галочки/индикатора */
   .footer_checkbox .checkmark:after {
-    left: 4px;
-    top: 5px;
-    width: 16px;
-    height: 14px;
-    border: 2px solid #27C78D;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
+    left: 6px;
+    top: 0px;
+    width: 10px;
+    height: 21px;
+    border: 1px solid #27C78D;
+    border-radius: 2px;
+    border-width: 0px 3px 3px 0;
     transform: rotate(45deg);
   }

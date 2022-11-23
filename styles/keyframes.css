@@ -1751,7 +1751,7 @@ a {
 .dash-list li {
     padding-left: 40px;
     list-style: none;
-    background-image: url("//img/slash1.svg width='28' height='1' viewBox='0 0 28 1' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='0.5' x2='28' y2='0.5' stroke='%235E6AD2'/%3E%3C/svg%3E%0A");
+    background-image: url("../img/slash1.svg ");
     background-repeat: no-repeat;
     background-position: 0 0.62em;
     font-family: 'Roboto', sans-serif;
@@ -2097,55 +2097,65 @@ a {
 /* -------------------------------- */
 
 .menu {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 30px;
-    margin-right: -16px;
-  }
-.menu .menu-item {
-    position: relative;
-    cursor: pointer;
-    
-  }
+	font-size: 18px;
+	font-weight: 300;
+}
+.menu_link {
+	color: #535353;
+	padding: 0.05em;
+	text-align: center;
+	text-decoration: none;
+	transition: all .5s;
+}
+.menu_link:hover {
+	background: #ffffff06;
+	color: #ff703e;
+}
+.menu > .wee {
+	background: #ff703e;
+	height: 2px;
+	pointer-events: none;
+}
 
-.menu .menu-item .wee {
-    height: 2px;
-    width: 100%;
-    background-color: #FF703E;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    transition: 0.75s;
-  }
-.menu .menu-item .menu_link {
-    margin: 0;
-    padding: 0 1rem 0.5rem;
-    font-size: 1rem;
-    color: #535353;
-    font-weight: 600;
-    transition: 0.75s;
-    
-  }
-.menu .menu-item .menu_link2 {
-    margin: 0;
-    padding: 0 1rem 0.5rem;
-    font-size: 1rem;
-    color: #535353;
-    font-weight: 600;
-    transition: 0.75s;
-    width: 109px;
-  }
-.menu .menu-item .menu_link:hover {
-    color: #FF703E;
-  }
-.menu .menu-item .menu_link2:hover {
-    color: #FF703E;
-  }
-.menu .current-menu-item .menu_link{
-    color: #00bfa5;
-  }
-.menu .current-menu-item .menu_link2{
-    color: #00bfa5;
-  }
+.menu-item{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    margin-right: 20px;
+}
+
+/* The Magic */
+.menu {
+	display: grid;
+	grid-template-columns: repeat(var(--items), 1fr);
+	position: relative;
+    align-items: center;
+}
+.menu > .wee {
+	opacity: 0;
+	transition: all .5s;
+	position: absolute;
+	bottom: 0;
+	left: var(--left, calc(100% / var(--items) * (var(--index) - 1)));
+	width: var(--width, calc(84% / var(--items)));
+	--index: 1;
+}
+
+.menu > #menu_line:hover ~ .wee {
+	opacity: 1;
+}
+
+
+
+.menu #menu_line:nth-of-type(1):hover ~ .wee { --index: 1; --width: calc(71% / var(--items));--left: calc(7% / var(--items));}
+.menu #menu_line:nth-of-type(2):hover ~ .wee { --index: 2; }
+.menu #menu_line:nth-of-type(3):hover ~ .wee { --index: 3; background-color: #86CC46; --width: calc(65% / var(--items));--left: calc(213% / var(--items));}
+.menu #menu_line:nth-of-type(4):hover ~ .wee { --index: 4; --width: calc(90% / var(--items));--left: calc(297% / var(--items)); }
+.menu .menu-item:nth-of-type(5):hover ~ .wee { --index: 5; }
+.menu .menu-item:nth-of-type(6):hover ~ .wee { --index: 6; }
+.menu .menu-item:nth-of-type(7):hover ~ .wee { --index: 7; }
+.menu .menu-item:nth-of-type(8):hover ~ .wee { --index: 8; }
+.menu .menu-item:nth-of-type(9):hover ~ .wee { --index: 9; }
+.menu .menu-item:nth-of-type(10):hover ~ .wee { --index: 10; }
+.menu #menu_line:last-of-type:hover ~ .wee { --index: var(--items); }
+.menu #menu_line:last-of-type:hover ~ .wee { --index: var(--items); }

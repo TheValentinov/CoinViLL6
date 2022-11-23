@@ -323,7 +323,9 @@ display: none;
 @media (max-width: 1180px){
 
     .footer_container{
-        background-size: auto;
+
+        padding-top: 59px;
+
     }
     
     .benefits-h2{
@@ -364,9 +366,7 @@ display: none;
     overflow-y: visible;
 }
 
-.container_content--9{
-    margin-top: 300px;
-}
+
 
 .footer_content-wrapper{
     justify-items: center;
@@ -625,6 +625,14 @@ transition: 0.3s ease;
         min-width: 450px;
     }
 }
+
+@media (max-width: 992px){
+    .container_content--9{
+        margin-top: 300px;
+    }
+    
+}
+
 
 @media (max-width: 960px){
 

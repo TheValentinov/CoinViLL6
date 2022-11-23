@@ -74,12 +74,20 @@ one.forEach(function (item) {
 })
 
 /*---------------PARALLAX-----------------------*/
-parallaxMouse({ elements: '.line_step-img1', moveFactor: 5, wrap: '.container-relative1', perspective: '100px' })
-parallaxMouse({ elements: '.line_step-img2', moveFactor: 5, wrap: '.container-relative2', perspective: '100px' })
-parallaxMouse({ elements: '.line_step-img3', moveFactor: 2, wrap: '.container-relative3', perspective: '100px' })
+// parallaxMouse({ elements: '.line_step-im', moveFactor: 5, wrap: '.container-relative1', perspective: '100px' })
 
-
-
+var scene = document.getElementById('line_step2');
+    var parallaxInstance = new Parallax(scene, {
+    relativeInput: true
+});
+var scene = document.getElementById('line_step3');
+    var parallaxInstance = new Parallax(scene, {
+    relativeInput: true
+});
+var scene = document.getElementById('line_step');
+    var parallaxInstance = new Parallax(scene, {
+    relativeInput: true
+});
 // let pr = document.querySelector('.right-content-laptop')
 
 // console.log(document.querySelector('.header_benefits--right-content'));
@@ -185,20 +193,20 @@ window.onscroll = function(){
 
 /*--------------NAV MENU HOVER----------------*/
 
-$(document).ready(function() {
-  // cool nav menu
-  $(window).on('load resize', function() {
-    var $thisnav = $('.current-menu-item').offset().left;
+// $(document).ready(function() {
+//   // cool nav menu
+//   $(window).on('load resize', function() {
+//     var $thisnav = $('.current-menu-item').offset().left;
 
-    $('.menu-item').hover(function() {
-      var $left = $(this).offset().left - $thisnav;
-      var $width = $(this).outerWidth();
-      var $start = 0;
-      $('.wee').css({ 'left': $left , 'width': $width });
-    }, function() {
-      var $initwidth = $('.current-menu-item').width();
-      $('.wee').css({ 'left': '0' , 'width': $initwidth });
-    });
-  });
+//     $('.menu-item').hover(function() {
+//       var $left = $(this).offset().left - $thisnav;
+//       var $width = $(this).outerWidth();
+//       var $start = 0;
+//       $('.wee').css({ 'left': $left , 'width': $width });
+//     }, function() {
+//       var $initwidth = $('.current-menu-item').width();
+//       $('.wee').css({ 'left': '0' , 'width': $initwidth });
+//     });
+//   });
 
-});
+// });
