@@ -2120,7 +2120,7 @@ a {
 .menu-item{
     display: flex;
     justify-content: center;
-    width: 100px;
+    width: 110px;
     margin-right: 20px;
 }
 
