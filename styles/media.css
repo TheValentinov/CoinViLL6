@@ -796,6 +796,9 @@ transition: 0.3s ease;
 
 @media (max-width: 880px){
 
+html{
+    min-width: 840px;   
+}
 
 body{
     min-width: 840px;
