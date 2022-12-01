@@ -30,6 +30,35 @@ $(function () {
   $('.up_scroll').click(function () {
     $('html').animate({ scrollTop: 0 });
   });
+
+  let timeoutForWee;
+
+  
+  $('.menu-item').on('mouseenter', function (e) {
+    clearTimeout(timeoutForWee)
+    $('.menu-item').removeClass('first');
+    $(this).addClass('first');
+    if ($(this).hasClass('green')) {
+      $('.wee2').css('background-color', `#86CC46`);
+    } else {
+      $('.wee2').css('background-color', `#FF703E`);
+    }
+    $('.wee2').css('left', `${this.offsetLeft}px`);
+    $('.wee2').css('width', `${this.offsetWidth}px`);
+    $('.wee2').css('display', `block`);
+    setTimeout(() => {
+      $('.wee2').css('opacity', `1`);
+    },100)
+  });
+
+  $('.menu').on('mouseleave', function (e) {
+    $('.menu-item').removeClass('first');
+    $('.wee2').css('opacity', `0`);
+    timeoutForWee = setTimeout(() => {
+      $('.wee2').removeAttr('style');
+    },500)
+  });
+
 });
 
 
@@ -80,11 +109,23 @@ var scene = document.getElementById('line_step2');
     var parallaxInstance = new Parallax(scene, {
     relativeInput: true
 });
+var scene = document.getElementById('line_step2-1');
+    var parallaxInstance = new Parallax(scene, {
+    relativeInput: true
+});
 var scene = document.getElementById('line_step3');
     var parallaxInstance = new Parallax(scene, {
     relativeInput: true
 });
-var scene = document.getElementById('line_step');
+var scene = document.getElementById('line_step3-1');
+    var parallaxInstance = new Parallax(scene, {
+    relativeInput: true
+});
+var scene = document.getElementById('line_step1');
+    var parallaxInstance = new Parallax(scene, {
+    relativeInput: true
+});
+var scene = document.getElementById('line_step1-1');
     var parallaxInstance = new Parallax(scene, {
     relativeInput: true
 });
@@ -210,3 +251,4 @@ window.onscroll = function(){
 //   });
 
 // });
+
